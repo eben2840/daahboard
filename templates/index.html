@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/newstyle.css')}}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Bootstrap demo</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <script>
+      AOS.init();
+    </script>
+
+      <nav class="navbar navbar-expand-lg sticky-top" style="background: #fff; ">
+        <div class="container-fluid" style="display:flex;">
+          <a class="navbar-brand">
+            <img src="https://www.central.edu.gh/static/img/Central-Uni-logo.png" alt="" width="15%">
+          </a>
+
+          
+
+         
+            <form class="d-flex " role="search"   style="width: 200%;" action="" >
+             
+            
+              <input class="form-control " type="search" name='searched' placeholder="Search for member" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+               
+
+            </form>
+
+            <button class="btn" style="color: #fff; background: #992621; border: none; margin-left: 3px;" type="logout">
+              <a href="#" style="text-decoration: none; color: #fff;">Logout</a>
+            </button>
+            
+          </div>
+        </div>
+        
+      </nav>
+
+
+    
+      <div class="container-fluid" >
+        <div class="row" >
+            <div class="col-3 px-1 position-fixed" id="sticky-sidebar">
+              <div class="container" >                
+            
+              
+                
+                  
+                  <div class="side-menu">
+                    <h6 class="divider"><b>Dashboard </b></h6>
+
+                    
+                    
+                    <div class="side-nav-button">
+                      <i class='bx bxs-dashboard icon'></i>
+                      <a href="/dashboard" class="side-nav-button-text">Dashboard</a>
+                    </div>
+                   
+                  
+                    
+
+                  
+                   
+                    <div class="side-nav-button">
+                      <i class='bx bxs-dashboard icon'></i>
+                      <a href="/list" class="side-nav-button-text">Members</a>
+                    </div>
+                 
+
+
+                
+                    <div class="side-nav-button">
+                      <i class='bx bxs-bar-chart-square icon'></i>
+                      <a href="/ministries" class="side-nav-button-text">Ministries</a>
+                
+                    
+                    
+
+                   
+
+
+
+                    
+                  </div>
+
+                </div>
+
+
+                    
+                      
+                      
+              
+        </div>
+            </div>
+            <div class="col offset-3" id="main">
+              <div class="container" style="background-color: #f2f2f2; padding: 20px; border-radius: 20px 0 0 0;">
+                
+      
+                <div class="row" style="justify-content: space-between;">
+                  
+                  <div class="col-md-4 ">
+                    <div class="department-item" data-aos="fade-down-left">
+                      <a href="/list" style="text-decoration: none; color: #992621;">
+                        <h5 class="names"> Total Students: </h5>
+                        <h5 class="names" style="color:red;"> </h5>
+                    </a>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4 ">
+                    <div class="department-item" data-aos="fade-down-left">
+                      <a href="/male_users" style="text-decoration: none; color: #992621;">
+                        <h5 class="names"> Total Male Students: </h5>
+                        <h5 class="names" style="color:red;"></h5>
+                    </a>
+                    </div>
+                  </div>
+                  
+                
+                  <div class="col-md-4 ">
+                    <div class="department-item" data-aos="fade-down-left">
+                      <a href="/female_users" style="text-decoration: none; color: #992621;">
+                        <h5 class="names"> Total Female Students: </h5>
+                        <h5 class="names" style="color:red;"></h5>
+                    </a>
+                    </div>
+                  </div>
+                
+                  <div class="col-md-4 ">
+                    
+                    <div class="department-item" data-aos="fade-down-left">
+                      <a href="/users_by_position" style="text-decoration: none; color: #992621;">
+                        <h5 class="names">Ministries Executives</h5>
+                        <h5 class="names" style="color:red;"> </h5>
+                    </a>
+                    </div>
+                  </div>
+                
+                  <div class="col-md-4 ">
+                    <div class="department-item" data-aos="fade-down-left">
+                      <a href="/leader" style="text-decoration: none; color: #992621;">
+                        <h5 class="names"> Directors/Directress: </h5>
+                        <h5 class="names" style="color:red;"></h5>
+                    </a>
+                    </div>
+                  </div>
+                  
+                
+                  <div class="col-md-4 ">
+                    <div class="department-item" data-aos="fade-down-left">
+                      <a href="/list" style="text-decoration: none; color: #992621;">
+                        <h5 class="names"> Send A Bulk Message</h5>
+                    </a>
+                    </div>
+                  </div>
+                
+                
+                  
+                
+                  
+                  
+                </div>
+                
+                
+                
+                
+      
+                
+                
+                
+                
+                
+                
+
+              </div>
+            </div>
+        </div>
+    </div>
+     
+
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+  
+  <!-- <script defer src="//firebase/8.9.1/firebase-storage.js"></script> -->
+  
+
+    
+  <script src="static/assets/js/script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+</body>
+</html>
